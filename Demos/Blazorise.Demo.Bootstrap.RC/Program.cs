@@ -23,6 +23,7 @@ namespace Blazorise.Demo.Bootstrap.RC
                 .ConfigureWebHostDefaults( webBuilder =>
                  {
                      webBuilder.UseStartup<Startup>();
-                 } );
+                 } )
+            .UseWindsorContainerServiceProvider();
     }
 }
